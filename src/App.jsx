@@ -6,23 +6,9 @@ import './App.css'
 
 function App() {
   
-  const backgroundDay = `background-image: url(./src/assets/Img/sunnyday.jpg)`;
-  const backgroundNight = `background-image: url(./src/assets/Img/backgroundnight1.jpg)`;
+  const backgroundDay = `background-image: url(https://i.ibb.co/jvD9cMm/sunnyday.jpg`;
   
   document.body.style = backgroundDay
-  // function imagen(){
-  //   date = new Date();
-  //   hour = date.getHours();
-  //   if(hour>=6 && hour<=18){//imagen desde la 1am hasta las 10am
-  //   document.body.style.backgroundImage= backgroundDay;
-  //   }
-  //   if(hour>=18 && hour<=24){
-  //     document.body.style.backgroundImage= backgroundNight; //imagen desde las 11am hasta las 6pm  document.getElementById("fondo").style.backgroundImage="url(img/frontal1.jpg)";
-  //   }
-  //   if(hour>=00 && hour<=6){//imagen desde las 7pm hasta las 12pm
-      // document.body.style.backgroundImage= backgroundNight;
-  //   }
-  // }
 
   let today = new Date();
   let hours = today.getHours();
@@ -76,9 +62,8 @@ navigator.geolocation.getCurrentPosition(success, error);
   const celcius = (weather.main?.temp - 273.15).toFixed(2);
 
 
-  const rainny = <img src="./src/assets/Img/Rain.png" alt=""></img>
-  const sunny = <img src="./src/assets/Img/Sunny.png" alt=""></img>
-  const milt = <img src="./src/assets/Img/mild.png" alt=""></img>
+  const rainny = <img src="https://i.ibb.co/D5hcSnb/Rain.png" alt="Rain" border="0"></img>
+  const sunny = <img src="https://i.ibb.co/grPz918/Sunny.png" alt="Sunny" border="0"></img>
   
 
   return (
